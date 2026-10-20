@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelVault | Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Pixel<span>Vault.</span></div>
+    <p>Explore moments through the lens</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <span class="tag">THE VISUAL COLLECTION</span>
+      <h1>Every Picture Tells a <em>Story.</em></h1>
+      <p>Discover beautiful moments, places and perspectives.</p>
+    </section>
+
+    <section class="gallery-section">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="city">City</button>
+        <button class="filter-btn" data-filter="animals">Animals</button>
+      </div>
+
+      <div class="gallery" id="gallery"></div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog"
+       aria-modal="true" aria-label="Image viewer"
+       aria-hidden="true">
+    <button class="close-btn" id="closeBtn" aria-label="Close viewer">&times;</button>
+    <button class="nav-btn prev" id="prevBtn" aria-label="Previous image">&#10094;</button>
+
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="">
+      <div class="lightbox-info">
+        <h3 id="lightboxTitle"></h3>
+        <span id="imageCounter"></span>
+      </div>
+    </div>
+
+    <button class="nav-btn next" id="nextBtn" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <footer>
+    <p>PixelVault &copy; 2026 | CodeAlpha Internship Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
